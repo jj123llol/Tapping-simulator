@@ -1,0 +1,78 @@
+getgenv().autoTap = true;
+getgenv().autoRebirth = true;
+
+
+function teleportTO(placeCFrame)
+    local plyr = game.Players.LocalPlayer;
+    if plyr.Character then
+        plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+    end
+end
+
+
+
+
+
+function doRebirth()
+    while getgenv().autoRebirth == true do 
+        
+wait()
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(unpack(args))
+
+end
+end
+
+
+
+
+
+
+function doTap()
+    while getgenv().autoTap == true do 
+        
+wait()
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").Events.Tap:FireServer(unpack(args))
+end
+end
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Clicking sim-by jude/rev", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "Autofarm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddToggle({
+	Name = "auto tap",
+	Default = (bool),
+	Callback = function(bool)
+	    getgenv().autoTap = bool
+		print(bool)
+		if bool then
+		    doTap();
+		    end
+	end    
+})
+
+Tab:AddToggle({
+	Name = "auto rebirth",
+	Default = (bool),
+	Callback = function(bool)
+	    getgenv().autoRebirth = bool
+		print(bool)
+		if bool then
+		    doRebirth();
+		    end
+	end    
+})
