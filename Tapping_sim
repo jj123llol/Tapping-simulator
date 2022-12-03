@@ -99,3 +99,85 @@ OrionLib:MakeNotification({
 
   	end    
 })
+
+local Tab = Window:MakeTab({
+	Name = "Teleports",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Forest island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-164.403809, 984.520996, -441.210724, 0.999232292, -2.64210218e-08, -0.039176736, 2.51585046e-08, 1, -3.2719182e-08, 0.039176736, 3.17084385e-08, 0.999232292)
+  	end    
+})
+Tab:AddButton({
+	Name = "Flower island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-179.066849, 1521.7561, -652.218445, -0.909977555, 3.80965126e-08, 0.414657533, 2.72592846e-08, 1, -3.20533857e-08, -0.414657533, -1.78645934e-08, -0.909977555)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "swamp island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-262.680511, 2127.99365, -665.644531, -0.998339355, 4.39525438e-09, -0.0576064773, 4.20725321e-09, 1, 3.38482398e-09, 0.0576064773, 3.13683812e-09, -0.998339355)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Snow island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-243.053696, 2951.75635, -473.03241, -0.996506274, -3.16214468e-08, 0.0835178196, -3.19864419e-08, 1, -3.03218939e-09, -0.0835178196, -5.6930336e-09, -0.996506274)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Desert island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-197.424896, 4242.66455, -777.502441, -0.023725519, 4.95295147e-08, 0.999718487, -2.75614251e-08, 1, -5.01975528e-08, -0.999718487, -2.87446298e-08, -0.023725519)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Death island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-317.960358, 5425.5874, -480.606842, 0.0259344056, 4.92875714e-08, 0.999663651, 6.55762422e-09, 1, -4.94742807e-08, -0.999663651, 7.83850496e-09, 0.0259344056)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Beach island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-187.202545, 6881.60352, -496.936127, 0.0279371403, -3.19038662e-08, 0.999609709, 7.64655042e-08, 1, 2.97792617e-08, -0.999609709, 7.56037082e-08, 0.0279371403)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Mines island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-287.730682, 8374.18066, -482.927612, -0.0453788675, -1.11351198e-07, 0.998969853, -4.67655887e-08, 1, 1.0934167e-07, -0.998969853, -4.17556123e-08, -0.0453788675)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Cloud island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-342.11441, 11262.8555, -232.995575, -0.251780212, 1.23742296e-07, 0.967784464, 6.95977533e-08, 1, -1.09754765e-07, -0.967784464, 3.97215452e-08, -0.251780212)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Coral island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-480.202606, 13819.3154, -542.983704, 0.00522573246, -2.98851539e-08, -0.999986351, 4.59288039e-08, 1, -2.96455482e-08, 0.999986351, -4.5773259e-08, 0.00522573246)
+  	end    
+})
+
+Tab:AddButton({
+	Name = "DarkHeart island",
+	Callback = function()
+      		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-440.113525, 17185.0391, -553.666565, 0.0506435297, -2.77361547e-08, 0.998716772, -3.10544657e-09, 1, 2.79292642e-08, -0.998716772, -4.51589788e-09, 0.0506435297)
+  	end    
+})
