@@ -66,7 +66,7 @@ Tab:AddToggle({
 })
 
 Tab:AddToggle({
-	Name = "auto rebirth",
+	Name = "auto rebirth (1 rebirth at a time)",
 	Default = (bool),
 	Callback = function(bool)
 	    getgenv().autoRebirth = bool
@@ -75,4 +75,27 @@ Tab:AddToggle({
 		    doRebirth();
 		    end
 	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Random",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "claim pet code",
+	Callback = function()
+local args = {
+    [1] = "freepetcode123"
+}
+
+game:GetService("ReplicatedStorage").Events.ClaimCode:FireServer(unpack(args))
+OrionLib:MakeNotification({
+	Name = "HEY",
+	Content = "Check your pets gui",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+  	end    
 })
