@@ -66,7 +66,7 @@ Tab:AddToggle({
 })
 
 Tab:AddToggle({
-	Name = "auto rebirth (1 rebirth at a time)",
+	Name = "auto rebirth",
 	Default = (bool),
 	Callback = function(bool)
 	    getgenv().autoRebirth = bool
